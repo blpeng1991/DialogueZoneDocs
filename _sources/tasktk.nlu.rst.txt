@@ -1,0 +1,77 @@
+tasktk.nlu package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.nlu.mlst
+
+Submodules
+----------
+
+tasktk.nlu.bi\_lstm module
+--------------------------
+
+.. automodule:: tasktk.nlu.bi_lstm
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.error module
+-----------------------
+
+.. automodule:: tasktk.nlu.error
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.joint\_nlu module
+----------------------------
+
+.. automodule:: tasktk.nlu.joint_nlu
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.nlu module
+---------------------
+
+.. automodule:: tasktk.nlu.nlu
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.seq\_seq module
+--------------------------
+
+.. automodule:: tasktk.nlu.seq_seq
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.tmp\_joint\_nlu module
+---------------------------------
+
+.. automodule:: tasktk.nlu.tmp_joint_nlu
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlu.utils module
+-----------------------
+
+.. automodule:: tasktk.nlu.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nlu
+    :members:
+    :undoc-members:
+    :show-inheritance:

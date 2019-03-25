@@ -1,0 +1,30 @@
+tasktk.policy.user package
+==========================
+
+Submodules
+----------
+
+tasktk.policy.user.policy module
+--------------------------------
+
+.. automodule:: tasktk.policy.user.policy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.policy.user.policy\_agenda\_multiwoz module
+--------------------------------------------------
+
+.. automodule:: tasktk.policy.user.policy_agenda_multiwoz
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.policy.user
+    :members:
+    :undoc-members:
+    :show-inheritance:

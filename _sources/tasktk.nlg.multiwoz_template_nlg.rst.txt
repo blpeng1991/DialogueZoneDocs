@@ -1,0 +1,22 @@
+tasktk.nlg.multiwoz\_template\_nlg package
+==========================================
+
+Submodules
+----------
+
+tasktk.nlg.multiwoz\_template\_nlg.multiwoz\_template\_nlg module
+-----------------------------------------------------------------
+
+.. automodule:: tasktk.nlg.multiwoz_template_nlg.multiwoz_template_nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nlg.multiwoz_template_nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,22 @@
+tasktk.policy.system.qlearning package
+======================================
+
+Submodules
+----------
+
+tasktk.policy.system.qlearning.dqn module
+-----------------------------------------
+
+.. automodule:: tasktk.policy.system.qlearning.dqn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.policy.system.qlearning
+    :members:
+    :undoc-members:
+    :show-inheritance:

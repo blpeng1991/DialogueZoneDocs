@@ -1,0 +1,525 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.dialog_agent package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.dst package" href="tasktk.dst.html" />
+    <link rel="prev" title="tasktk package" href="tasktk.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+      <li>tasktk.dialog_agent package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.dialog_agent.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-dialog-agent-package">
+<h1>tasktk.dialog_agent package<a class="headerlink" href="#tasktk-dialog-agent-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.dialog_agent.session">
+<span id="tasktk-dialog-agent-session-module"></span><h2>tasktk.dialog_agent.session module<a class="headerlink" href="#module-tasktk.dialog_agent.session" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.dialog_agent.session.Session">
+<em class="property">class </em><code class="descclassname">tasktk.dialog_agent.session.</code><code class="descname">Session</code><span class="sig-paren">(</span><em>sys_agent</em>, <em>simulator</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.session.Session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A dialog controller which aggregates two agents to conduct a complete dialog session or to train the dialog policy
+model.</p>
+<dl class="method">
+<dt id="tasktk.dialog_agent.session.Session.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.session.Session.init_session" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.dialog_agent.session.Session.next_turn">
+<code class="descname">next_turn</code><span class="sig-paren">(</span><em>last_user_response</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.session.Session.next_turn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conduct a new turn of dialog, which consists of the system response and user response.
+Note that the system response comes first in each turn, and in the 1st turn its response can be like “hello, how
+can I help you”.
+The variable type of responses can be either 1) str or 2) dialog act, depends on the dialog mode settings of the
+two agents which are supposed to be the same.
+:param last_user_response: Last user response.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The response of system.
+user_response:The response of user simulator.
+session_over (boolean): True if session ends, else session continues.
+reward (float): The reward given by the user.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">sys_response</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.dialog_agent.session.Session.train_sys">
+<code class="descname">train_sys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.session.Session.train_sys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the parameters of system agent.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.dialog_agent.system">
+<span id="tasktk-dialog-agent-system-module"></span><h2>tasktk.dialog_agent.system module<a class="headerlink" href="#module-tasktk.dialog_agent.system" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.dialog_agent.system.Dialog_System">
+<em class="property">class </em><code class="descclassname">tasktk.dialog_agent.system.</code><code class="descname">Dialog_System</code><span class="sig-paren">(</span><em>nlu_model</em>, <em>tracker</em>, <em>policy</em>, <em>nlg_model</em>, <em>mode=0</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.system.Dialog_System" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The bass class for a dialog agent which aggregates the four base components.</p>
+<dl class="method">
+<dt id="tasktk.dialog_agent.system.Dialog_System.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.system.Dialog_System.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the parameters for a new session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.dialog_agent.system.Dialog_System.response">
+<code class="descname">response</code><span class="sig-paren">(</span><em>input</em>, <em>sess</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.system.Dialog_System.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the response of system bot.
+:param input: Preorder user output. The variable type depends on the user model’s configuration,</p>
+<blockquote>
+<div>i.e., if the user.nlg is not None, type(input) == str; else if user.nlg is None, type(input) = dict.</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sess</strong> (<a class="reference internal" href="#tasktk.dialog_agent.session.Session" title="tasktk.dialog_agent.session.Session"><em>Session</em></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The output of system agent.
+action (dict): The dialog act of the output of system agent.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">output (str or dict)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.dialog_agent.user">
+<span id="tasktk-dialog-agent-user-module"></span><h2>tasktk.dialog_agent.user module<a class="headerlink" href="#module-tasktk.dialog_agent.user" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.dialog_agent.user.User_Simulator">
+<em class="property">class </em><code class="descclassname">tasktk.dialog_agent.user.</code><code class="descname">User_Simulator</code><span class="sig-paren">(</span><em>nlu_model</em>, <em>policy</em>, <em>nlg_model</em>, <em>mode=0</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.user.User_Simulator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>An aggregation of user simulator components.</p>
+<dl class="method">
+<dt id="tasktk.dialog_agent.user.User_Simulator.init_response">
+<code class="descname">init_response</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.user.User_Simulator.init_response" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.dialog_agent.user.User_Simulator.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.user.User_Simulator.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Init the parameters for a new session.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.dialog_agent.user.User_Simulator.response">
+<code class="descname">response</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.dialog_agent.user.User_Simulator.response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the response of user.
+:param input: Preorder system output, a 1) string if self.mode == 0, else 2) dialog act if self.mode == 1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">User response, a 1) string if self.mode == 0, else 2) dialog act if self.mode == 1.
+session_over (boolean): True to terminate session, else session continues.
+reward (float): The reward given by the user.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">output (str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.dialog_agent">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.dialog_agent" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.dst.html" class="btn btn-neutral float-right" title="tasktk.dst package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.html" class="btn btn-neutral" title="tasktk package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.dialog_agent package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.dialog_agent.session">tasktk.dialog_agent.session module</a></li>
+<li><a class="reference internal" href="#module-tasktk.dialog_agent.system">tasktk.dialog_agent.system module</a></li>
+<li><a class="reference internal" href="#module-tasktk.dialog_agent.user">tasktk.dialog_agent.user module</a></li>
+<li><a class="reference internal" href="#module-tasktk.dialog_agent">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

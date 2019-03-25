@@ -1,0 +1,688 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.nlg package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.nlg.multiwoz_template_nlg package" href="tasktk.nlg.multiwoz_template_nlg.html" />
+    <link rel="prev" title="tasktk.dst package" href="tasktk.dst.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+      <li>tasktk.nlg package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.nlg.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-nlg-package">
+<h1>tasktk.nlg package<a class="headerlink" href="#tasktk-nlg-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html#module-tasktk.nlg.multiwoz_template_nlg.multiwoz_template_nlg">tasktk.nlg.multiwoz_template_nlg.multiwoz_template_nlg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html#module-tasktk.nlg.multiwoz_template_nlg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.nlg.decoder">
+<span id="tasktk-nlg-decoder-module"></span><h2>tasktk.nlg.decoder module<a class="headerlink" href="#module-tasktk.nlg.decoder" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jun 13, 2016</p>
+<p>&#64;author: xiul</p>
+<dl class="class">
+<dt id="tasktk.nlg.decoder.decoder">
+<em class="property">class </em><code class="descclassname">tasktk.nlg.decoder.</code><code class="descname">decoder</code><span class="sig-paren">(</span><em>input_size</em>, <em>hidden_size</em>, <em>output_size</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.batchBackward">
+<code class="descname">batchBackward</code><span class="sig-paren">(</span><em>dY</em>, <em>cache</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.batchBackward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.batchForward">
+<code class="descname">batchForward</code><span class="sig-paren">(</span><em>ds</em>, <em>batch</em>, <em>params</em>, <em>predict_mode=False</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.batchForward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.bwdPass">
+<code class="descname">bwdPass</code><span class="sig-paren">(</span><em>dY</em>, <em>cache</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.bwdPass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.costFunc">
+<code class="descname">costFunc</code><span class="sig-paren">(</span><em>ds</em>, <em>batch</em>, <em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.costFunc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><em>ds</em>, <em>split</em>, <em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.fwdPass">
+<code class="descname">fwdPass</code><span class="sig-paren">(</span><em>Xs</em>, <em>params</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.fwdPass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.get_struct">
+<code class="descname">get_struct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.get_struct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.post_process">
+<code class="descname">post_process</code><span class="sig-paren">(</span><em>pred_template</em>, <em>slot_val_dict</em>, <em>slot_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.post_process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>ds</em>, <em>split</em>, <em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.decoder.decoder.singleBatch">
+<code class="descname">singleBatch</code><span class="sig-paren">(</span><em>ds</em>, <em>batch</em>, <em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.decoder.decoder.singleBatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg.lstm_decoder_tanh">
+<span id="tasktk-nlg-lstm-decoder-tanh-module"></span><h2>tasktk.nlg.lstm_decoder_tanh module<a class="headerlink" href="#module-tasktk.nlg.lstm_decoder_tanh" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jun 13, 2019</p>
+<p>An LSTM decoder - add tanh after cell before output gate</p>
+<p>&#64;author: xiul</p>
+<dl class="class">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh">
+<em class="property">class </em><code class="descclassname">tasktk.nlg.lstm_decoder_tanh.</code><code class="descname">lstm_decoder_tanh</code><span class="sig-paren">(</span><em>diaact_input_size</em>, <em>input_size</em>, <em>hidden_size</em>, <em>output_size</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.nlg.decoder.decoder" title="tasktk.nlg.decoder.decoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.nlg.decoder.decoder</span></code></a></p>
+<dl class="method">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.beam_forward">
+<code class="descname">beam_forward</code><span class="sig-paren">(</span><em>dict</em>, <em>Xs</em>, <em>params</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.beam_forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.bwdPass">
+<code class="descname">bwdPass</code><span class="sig-paren">(</span><em>dY</em>, <em>cache</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.bwdPass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>dict</em>, <em>Xs</em>, <em>params</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.forward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.fwdPass">
+<code class="descname">fwdPass</code><span class="sig-paren">(</span><em>Xs</em>, <em>params</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.fwdPass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.prepare_input_rep">
+<code class="descname">prepare_input_rep</code><span class="sig-paren">(</span><em>ds</em>, <em>batch</em>, <em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_decoder_tanh.lstm_decoder_tanh.prepare_input_rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg.lstm_nlg">
+<span id="tasktk-nlg-lstm-nlg-module"></span><h2>tasktk.nlg.lstm_nlg module<a class="headerlink" href="#module-tasktk.nlg.lstm_nlg" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan. 17, 2019</p>
+<p>–dia_act_nl_pairs.v6.json: agt and usr have their own NL.</p>
+<p>TODO: Need to rewrite this file</p>
+<p>&#64;author: xiul</p>
+<dl class="function">
+<dt id="tasktk.nlg.lstm_nlg.convert_pickle">
+<code class="descclassname">tasktk.nlg.lstm_nlg.</code><code class="descname">convert_pickle</code><span class="sig-paren">(</span><em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.convert_pickle" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert pickle 2 to 3</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg">
+<em class="property">class </em><code class="descclassname">tasktk.nlg.lstm_nlg.</code><code class="descname">lstm_nlg</code><span class="sig-paren">(</span><em>model_path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.convert_diaact_to_nl">
+<code class="descname">convert_diaact_to_nl</code><span class="sig-paren">(</span><em>dia_act</em>, <em>turn_msg</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.convert_diaact_to_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert Dia_Act into NL: Rule + Model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.diaact_to_nl_slot_filling">
+<code class="descname">diaact_to_nl_slot_filling</code><span class="sig-paren">(</span><em>dia_act</em>, <em>template_sentence</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.diaact_to_nl_slot_filling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace the slots with its values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><em>action</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate nl</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.generate_nl">
+<code class="descname">generate_nl</code><span class="sig-paren">(</span><em>actions</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.generate_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate nl from multiple actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.load_nlg_model">
+<code class="descname">load_nlg_model</code><span class="sig-paren">(</span><em>model_path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.load_nlg_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>load the trained NLG model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.load_predefine_act_nl_pairs">
+<code class="descname">load_predefine_act_nl_pairs</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.load_predefine_act_nl_pairs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load some pre-defined Dia_Act&amp;NL Pairs from file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.post_process">
+<code class="descname">post_process</code><span class="sig-paren">(</span><em>pred_template</em>, <em>slot_val_dict</em>, <em>slot_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.post_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>post_process to fill the slot in the template sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.lstm_nlg.lstm_nlg.translate_diaact">
+<code class="descname">translate_diaact</code><span class="sig-paren">(</span><em>dia_acts</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.lstm_nlg.translate_diaact" title="Permalink to this definition">¶</a></dt>
+<dd><p>prepare the diaact into vector representation, and generate the sentence by Model</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlg.lstm_nlg.main">
+<code class="descclassname">tasktk.nlg.lstm_nlg.</code><code class="descname">main</code><span class="sig-paren">(</span><em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>test code</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlg.lstm_nlg.test_nlg">
+<code class="descclassname">tasktk.nlg.lstm_nlg.</code><code class="descname">test_nlg</code><span class="sig-paren">(</span><em>params</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.test_nlg" title="Permalink to this definition">¶</a></dt>
+<dd><p>test nlg</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlg.lstm_nlg.to_consistent_data_structure">
+<code class="descclassname">tasktk.nlg.lstm_nlg.</code><code class="descname">to_consistent_data_structure</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.lstm_nlg.to_consistent_data_structure" title="Permalink to this definition">¶</a></dt>
+<dd><p>obj could be set, dictionary, list, tuple or nested of them.
+This function will convert all dictionaries inside the obj to be list of tuples (sorted by key),
+will convert all set inside the obj to be list (sorted by to_consistent_data_structure(value))</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">to_consistent_data_structure</span><span class="p">([</span>
+<span class="go">    {&quot;a&quot; : 3, &quot;b&quot;: 4},</span>
+<span class="go">    ( {&quot;e&quot; : 5}, (6, 7)</span>
+<span class="go">    ),</span>
+<span class="go">    set([10, ]),</span>
+<span class="go">    11</span>
+<span class="go">])</span>
+</pre></div>
+</div>
+<p>Out[2]: [[(‘a’, 3), (‘b’, 4)], ([(‘e’, 5)], (6, 7)), [10], 11]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg.nlg">
+<span id="tasktk-nlg-nlg-module"></span><h2>tasktk.nlg.nlg module<a class="headerlink" href="#module-tasktk.nlg.nlg" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.nlg.nlg.NLG">
+<em class="property">class </em><code class="descclassname">tasktk.nlg.nlg.</code><code class="descname">NLG</code><a class="headerlink" href="#tasktk.nlg.nlg.NLG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for NLG model.</p>
+<dl class="method">
+<dt id="tasktk.nlg.nlg.NLG.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><em>dialog_act</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.nlg.NLG.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a natural language utterance conditioned on the dialog act.
+:param dialog_act: Dialog act, with the form of (act_type, {slot_name_1: value_1,</p>
+<blockquote>
+<div>slot_name_2, value_2, …})</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A natural langauge utterance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">response (str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg.template_nlg">
+<span id="tasktk-nlg-template-nlg-module"></span><h2>tasktk.nlg.template_nlg module<a class="headerlink" href="#module-tasktk.nlg.template_nlg" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlg.template_nlg.Template_NLG">
+<em class="property">class </em><code class="descclassname">tasktk.nlg.template_nlg.</code><code class="descname">Template_NLG</code><a class="headerlink" href="#tasktk.nlg.template_nlg.Template_NLG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.nlg.nlg.NLG" title="tasktk.nlg.nlg.NLG"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.nlg.nlg.NLG</span></code></a></p>
+<dl class="method">
+<dt id="tasktk.nlg.template_nlg.Template_NLG.generate">
+<code class="descname">generate</code><span class="sig-paren">(</span><em>dialog_act</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.template_nlg.Template_NLG.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a natural language utterance conditioned on the dialog act.
+:param dialog_act: Dialog act, with the form of (act_type, {slot_name_1: value_1,</p>
+<blockquote>
+<div>slot_name_2, value_2, …})</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A natural langauge utterance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">response (str)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlg.template_nlg.Template_NLG.init">
+<code class="descname">init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.template_nlg.Template_NLG.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg.utils">
+<span id="tasktk-nlg-utils-module"></span><h2>tasktk.nlg.utils module<a class="headerlink" href="#module-tasktk.nlg.utils" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jun 13, 2016</p>
+<p>&#64;author: xiul</p>
+<dl class="function">
+<dt id="tasktk.nlg.utils.initWeights">
+<code class="descclassname">tasktk.nlg.utils.</code><code class="descname">initWeights</code><span class="sig-paren">(</span><em>n</em>, <em>d</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.utils.initWeights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialization Strategy</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlg.utils.mergeDicts">
+<code class="descclassname">tasktk.nlg.utils.</code><code class="descname">mergeDicts</code><span class="sig-paren">(</span><em>d0</em>, <em>d1</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlg.utils.mergeDicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>for all k in d0, d0 += d1 . d’s are dictionaries of key -&gt; numpy array</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlg">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.nlg" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.nlg.multiwoz_template_nlg.html" class="btn btn-neutral float-right" title="tasktk.nlg.multiwoz_template_nlg package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.dst.html" class="btn btn-neutral" title="tasktk.dst package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.nlg package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.decoder">tasktk.nlg.decoder module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.lstm_decoder_tanh">tasktk.nlg.lstm_decoder_tanh module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.lstm_nlg">tasktk.nlg.lstm_nlg module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.nlg">tasktk.nlg.nlg module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.template_nlg">tasktk.nlg.template_nlg module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg.utils">tasktk.nlg.utils module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

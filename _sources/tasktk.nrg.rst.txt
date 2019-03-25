@@ -1,0 +1,17 @@
+tasktk.nrg package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.nrg.mdrg
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nrg
+    :members:
+    :undoc-members:
+    :show-inheritance:

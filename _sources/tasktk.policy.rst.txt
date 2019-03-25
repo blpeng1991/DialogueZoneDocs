@@ -1,0 +1,18 @@
+tasktk.policy package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.policy.system
+    tasktk.policy.user
+
+Module contents
+---------------
+
+.. automodule:: tasktk.policy
+    :members:
+    :undoc-members:
+    :show-inheritance:

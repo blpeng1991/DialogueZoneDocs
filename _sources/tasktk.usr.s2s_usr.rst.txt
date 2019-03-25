@@ -1,0 +1,46 @@
+tasktk.usr.s2s\_usr package
+===========================
+
+Submodules
+----------
+
+tasktk.usr.s2s\_usr.lstm\_encoder\_decoder module
+-------------------------------------------------
+
+.. automodule:: tasktk.usr.s2s_usr.lstm_encoder_decoder
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.s2s\_usr.s2s\_simulator module
+-----------------------------------------
+
+.. automodule:: tasktk.usr.s2s_usr.s2s_simulator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.s2s\_usr.seq\_seq module
+-----------------------------------
+
+.. automodule:: tasktk.usr.s2s_usr.seq_seq
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.s2s\_usr.utils module
+--------------------------------
+
+.. automodule:: tasktk.usr.s2s_usr.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.usr.s2s_usr
+    :members:
+    :undoc-members:
+    :show-inheritance:

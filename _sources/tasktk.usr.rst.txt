@@ -1,0 +1,30 @@
+tasktk.usr package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.usr.s2s_usr
+    tasktk.usr.uber_usr
+
+Submodules
+----------
+
+tasktk.usr.goal\_generator module
+---------------------------------
+
+.. automodule:: tasktk.usr.goal_generator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.usr
+    :members:
+    :undoc-members:
+    :show-inheritance:

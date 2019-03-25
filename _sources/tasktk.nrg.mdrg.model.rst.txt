@@ -1,0 +1,38 @@
+tasktk.nrg.mdrg.model package
+=============================
+
+Submodules
+----------
+
+tasktk.nrg.mdrg.model.evaluator module
+--------------------------------------
+
+.. automodule:: tasktk.nrg.mdrg.model.evaluator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nrg.mdrg.model.model module
+----------------------------------
+
+.. automodule:: tasktk.nrg.mdrg.model.model
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nrg.mdrg.model.policy module
+-----------------------------------
+
+.. automodule:: tasktk.nrg.mdrg.model.policy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nrg.mdrg.model
+    :members:
+    :undoc-members:
+    :show-inheritance:

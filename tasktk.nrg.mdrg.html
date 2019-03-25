@@ -1,0 +1,497 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.nrg.mdrg package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.nrg.mdrg.model package" href="tasktk.nrg.mdrg.model.html" />
+    <link rel="prev" title="tasktk.nrg package" href="tasktk.nrg.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+          <li><a href="tasktk.nrg.html">tasktk.nrg package</a> &gt;</li>
+        
+      <li>tasktk.nrg.mdrg package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.nrg.mdrg.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-nrg-mdrg-package">
+<h1>tasktk.nrg.mdrg package<a class="headerlink" href="#tasktk-nrg-mdrg-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.model.html#tasktk-nrg-mdrg-model-evaluator-module">tasktk.nrg.mdrg.model.evaluator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.model.html#module-tasktk.nrg.mdrg.model.model">tasktk.nrg.mdrg.model.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.model.html#module-tasktk.nrg.mdrg.model.policy">tasktk.nrg.mdrg.model.policy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.model.html#module-tasktk.nrg.mdrg.model">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#tasktk-nrg-mdrg-utils-dbpointer-module">tasktk.nrg.mdrg.utils.dbPointer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#module-tasktk.nrg.mdrg.utils.dbquery">tasktk.nrg.mdrg.utils.dbquery module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#module-tasktk.nrg.mdrg.utils.delexicalize">tasktk.nrg.mdrg.utils.delexicalize module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#module-tasktk.nrg.mdrg.utils.nlp">tasktk.nrg.mdrg.utils.nlp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#module-tasktk.nrg.mdrg.utils.util">tasktk.nrg.mdrg.utils.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html#module-tasktk.nrg.mdrg.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tasktk-nrg-mdrg-create-delex-data-module">
+<h2>tasktk.nrg.mdrg.create_delex_data module<a class="headerlink" href="#tasktk-nrg-mdrg-create-delex-data-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.nrg.mdrg.predict">
+<span id="tasktk-nrg-mdrg-predict-module"></span><h2>tasktk.nrg.mdrg.predict module<a class="headerlink" href="#module-tasktk.nrg.mdrg.predict" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nrg.mdrg.predict.Args">
+<em class="property">class </em><code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">Args</code><a class="headerlink" href="#tasktk.nrg.mdrg.predict.Args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.addBookingPointer">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">addBookingPointer</code><span class="sig-paren">(</span><em>state</em>, <em>pointer_vector</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.addBookingPointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add information about availability of the booking option.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.addDBPointer">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">addDBPointer</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.addDBPointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create database pointer for all related domains.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.delexicaliseReferenceNumber">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">delexicaliseReferenceNumber</code><span class="sig-paren">(</span><em>sent</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.delexicaliseReferenceNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Based on the belief state, we can find reference number that
+during data gathering was created randomly.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.get_active_domain">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">get_active_domain</code><span class="sig-paren">(</span><em>prev_active_domain</em>, <em>prev_state</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.get_active_domain" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.get_summary_bstate">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">get_summary_bstate</code><span class="sig-paren">(</span><em>bstate</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.get_summary_bstate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Based on the mturk annotations we form multi-domain belief state</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.loadModel">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">loadModel</code><span class="sig-paren">(</span><em>num</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.loadModel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.load_config">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">load_config</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.load_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.mark_not_mentioned">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">mark_not_mentioned</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.mark_not_mentioned" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.populate_template">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">populate_template</code><span class="sig-paren">(</span><em>template</em>, <em>top_results</em>, <em>num_results</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.populate_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nrg.mdrg.predict.predict">
+<code class="descclassname">tasktk.nrg.mdrg.predict.</code><code class="descname">predict</code><span class="sig-paren">(</span><em>model</em>, <em>prev_state</em>, <em>prev_active_domain</em>, <em>state</em>, <em>dic</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nrg.mdrg.predict.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="tasktk-nrg-mdrg-test-module">
+<h2>tasktk.nrg.mdrg.test module<a class="headerlink" href="#tasktk-nrg-mdrg-test-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tasktk-nrg-mdrg-train-module">
+<h2>tasktk.nrg.mdrg.train module<a class="headerlink" href="#tasktk-nrg-mdrg-train-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.nrg.mdrg">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.nrg.mdrg" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.nrg.mdrg.model.html" class="btn btn-neutral float-right" title="tasktk.nrg.mdrg.model package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.nrg.html" class="btn btn-neutral" title="tasktk.nrg package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.nrg.mdrg package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#tasktk-nrg-mdrg-create-delex-data-module">tasktk.nrg.mdrg.create_delex_data module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nrg.mdrg.predict">tasktk.nrg.mdrg.predict module</a></li>
+<li><a class="reference internal" href="#tasktk-nrg-mdrg-test-module">tasktk.nrg.mdrg.test module</a></li>
+<li><a class="reference internal" href="#tasktk-nrg-mdrg-train-module">tasktk.nrg.mdrg.train module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nrg.mdrg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

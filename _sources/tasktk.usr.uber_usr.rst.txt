@@ -1,0 +1,46 @@
+tasktk.usr.uber\_usr package
+============================
+
+Submodules
+----------
+
+tasktk.usr.uber\_usr.Config module
+----------------------------------
+
+.. automodule:: tasktk.usr.uber_usr.Config
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.uber\_usr.data\_loader module
+----------------------------------------
+
+.. automodule:: tasktk.usr.uber_usr.data_loader
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.uber\_usr.main module
+--------------------------------
+
+.. automodule:: tasktk.usr.uber_usr.main
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.usr.uber\_usr.model module
+---------------------------------
+
+.. automodule:: tasktk.usr.uber_usr.model
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.usr.uber_usr
+    :members:
+    :undoc-members:
+    :show-inheritance:

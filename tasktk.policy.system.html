@@ -1,0 +1,714 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.policy.system package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.policy.system.qlearning package" href="tasktk.policy.system.qlearning.html" />
+    <link rel="prev" title="tasktk.policy package" href="tasktk.policy.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+          <li><a href="tasktk.policy.html">tasktk.policy package</a> &gt;</li>
+        
+      <li>tasktk.policy.system package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.policy.system.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-policy-system-package">
+<h1>tasktk.policy.system package<a class="headerlink" href="#tasktk-policy-system-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.policy.system.qlearning.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.policy.system.qlearning.html#module-tasktk.policy.system.qlearning.dqn">tasktk.policy.system.qlearning.dqn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.policy.system.qlearning.html#module-tasktk.policy.system.qlearning">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.policy.system.dialog_config">
+<span id="tasktk-policy-system-dialog-config-module"></span><h2>tasktk.policy.system.dialog_config module<a class="headerlink" href="#module-tasktk.policy.system.dialog_config" title="Permalink to this headline">¶</a></h2>
+<p>Created on Feb. 14, 2019</p>
+<p>&#64;author: xiul</p>
+<dl class="function">
+<dt id="tasktk.policy.system.dialog_config.load_feasible_action_set">
+<code class="descclassname">tasktk.policy.system.dialog_config.</code><code class="descname">load_feasible_action_set</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dialog_config.load_feasible_action_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>load feasible actions</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.dialog_config.load_feasible_actions">
+<code class="descclassname">tasktk.policy.system.dialog_config.</code><code class="descname">load_feasible_actions</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dialog_config.load_feasible_actions" title="Permalink to this definition">¶</a></dt>
+<dd><p>load feasible actions</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.policy.system.dqn_bot">
+<span id="tasktk-policy-system-dqn-bot-module"></span><h2>tasktk.policy.system.dqn_bot module<a class="headerlink" href="#module-tasktk.policy.system.dqn_bot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.policy.system.dqn_bot.DQN_Bot">
+<em class="property">class </em><code class="descclassname">tasktk.policy.system.dqn_bot.</code><code class="descname">DQN_Bot</code><span class="sig-paren">(</span><em>act_types=['Attraction-Inform', 'Attraction-Request', 'Hospital-Inform', 'Hospital-Request', 'Hotel-Inform', 'Hotel-Request', 'Police-Inform', 'Police-Request', 'Restaurant-Inform', 'Restaurant-Request', 'Taxi-Inform', 'Taxi-Request', 'Train-Inform', 'Train-Request', 'general-bye', 'general-greet', 'general-thank', 'Attraction-NoOffer', 'Attraction-Recommend', 'Attraction-Select', 'Booking-Book', 'Booking-Inform', 'Booking-NoBook', 'Booking-Request', 'Hotel-NoOffer', 'Hotel-Recommend', 'Hotel-Select', 'Restaurant-NoOffer', 'Restaurant-Recommend', 'Restaurant-Select', 'Train-NoOffer', 'Train-OfferBook', 'Train-OfferBooked', 'Train-Select', 'general-reqmore', 'general-welcome'], slots=['Area', 'Name', 'Type', 'Addr', 'Fee', 'Phone', 'Post', 'Department', 'Day', 'Internet', 'Parking', 'People', 'Price', 'Stars', 'Stay', 'Ref', 'Food', 'Time', 'Arrive', 'Depart', 'Dest', 'Leave', 'Car', 'Duration', 'TrainID', 'Choice', 'Open', 'Id', 'Ticket'], slot_val_dict=None, params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_bot.DQN_Bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.policy.system.dqn_policy.DQN_Policy" title="tasktk.policy.system.dqn_policy.DQN_Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.policy.system.dqn_policy.DQN_Policy</span></code></a></p>
+<p>DQN-based bot.</p>
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_bot.DQN_Bot.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_bot.DQN_Bot.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore after one session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_bot.DQN_Bot.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_bot.DQN_Bot.predict" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>please refer to util/state.py</strong> (<a class="reference internal" href="tasktk.util.html#tasktk.util.state.State" title="tasktk.util.state.State"><em>State</em></a><em>,</em>) – </td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Output:</dt>
+<dd>DA(Dialog Act), in the form of {act_type1: [[slot_name_1, value_1], [slot_name_2, value_2], …], …}</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.policy.system.dqn_policy">
+<span id="tasktk-policy-system-dqn-policy-module"></span><h2>tasktk.policy.system.dqn_policy module<a class="headerlink" href="#module-tasktk.policy.system.dqn_policy" title="Permalink to this headline">¶</a></h2>
+<p>Created on Feb 14, 2019</p>
+<p>DQN Agent</p>
+<p>&#64;author: xiul</p>
+<dl class="class">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy">
+<em class="property">class </em><code class="descclassname">tasktk.policy.system.dqn_policy.</code><code class="descname">DQN_Policy</code><span class="sig-paren">(</span><em>act_types</em>, <em>slots</em>, <em>slot_val_dict=None</em>, <em>params=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.policy.system.policy.Sys_Policy" title="tasktk.policy.system.policy.Sys_Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.policy.system.policy.Sys_Policy</span></code></a></p>
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.action_index">
+<code class="descname">action_index</code><span class="sig-paren">(</span><em>act_slot_response</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.action_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the index of action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize one session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.initialize_config">
+<code class="descname">initialize_config</code><span class="sig-paren">(</span><em>req_set</em>, <em>inf_set</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.initialize_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize request_set and inform_set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.initialize_episode">
+<code class="descname">initialize_episode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.initialize_episode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a new episode. This function is called every time a new episode is run.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.load_experience_replay_from_file">
+<code class="descname">load_experience_replay_from_file</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.load_experience_replay_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the experience replay pool from a file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.load_trained_DQN">
+<code class="descname">load_trained_DQN</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.load_trained_DQN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the trained DQN from a file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict an system action given state.
+:param state: Please check util/state.py
+:type state: dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">System act, in the form of {act_type1: [[slot_name_1, value_1], [slot_name_2, value_2], …], …}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">action (list)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.prepare_state_representation">
+<code class="descname">prepare_state_representation</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.prepare_state_representation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the representation for each state</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.register_experience_replay_tuple">
+<code class="descname">register_experience_replay_tuple</code><span class="sig-paren">(</span><em>s_t</em>, <em>a_t</em>, <em>reward</em>, <em>s_tplus1</em>, <em>episode_over</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.register_experience_replay_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register feedback from the environment, to be stored as future training data</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.rule_policy">
+<code class="descname">rule_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.rule_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rule Policy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.rule_request_inform_policy">
+<code class="descname">rule_request_inform_policy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.rule_request_inform_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rule Request and Inform Policy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.run_policy">
+<code class="descname">run_policy</code><span class="sig-paren">(</span><em>representation</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.run_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>epsilon-greedy policy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.save_experience_replay_to_file">
+<code class="descname">save_experience_replay_to_file</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.save_experience_replay_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the experience replay pool to a file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.state_to_action">
+<code class="descname">state_to_action</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.state_to_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>DQN: Input state, output action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.dqn_policy.DQN_Policy.train">
+<code class="descname">train</code><span class="sig-paren">(</span><em>batch_size=1</em>, <em>num_batches=100</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.dqn_policy.DQN_Policy.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train DQN with experience replay</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.policy.system.policy">
+<span id="tasktk-policy-system-policy-module"></span><h2>tasktk.policy.system.policy module<a class="headerlink" href="#module-tasktk.policy.system.policy" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>The policy base class for system bot.</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.policy.system.policy.Sys_Policy">
+<em class="property">class </em><code class="descclassname">tasktk.policy.system.policy.</code><code class="descname">Sys_Policy</code><a class="headerlink" href="#tasktk.policy.system.policy.Sys_Policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for system policy model.</p>
+<dl class="method">
+<dt id="tasktk.policy.system.policy.Sys_Policy.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.policy.Sys_Policy.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore after one session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.policy.Sys_Policy.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.policy.Sys_Policy.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict an system action given state.
+:param state: Dialog state. Please refer to util/state.py
+:type state: dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">System act, with the form of (act_type, {slot_name_1: value_1, slot_name_2, value_2, …})</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">action</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.policy.system.rule_based_multiwoz_bot">
+<span id="tasktk-policy-system-rule-based-multiwoz-bot-module"></span><h2>tasktk.policy.system.rule_based_multiwoz_bot module<a class="headerlink" href="#module-tasktk.policy.system.rule_based_multiwoz_bot" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot">
+<em class="property">class </em><code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">Rule_Based_Multiwoz_Bot</code><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.policy.system.policy.Sys_Policy" title="tasktk.policy.system.policy.Sys_Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.policy.system.policy.Sys_Policy</span></code></a></p>
+<p>Rule-based bot. Implemented for Multiwoz dataset.</p>
+<dl class="attribute">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.choice">
+<code class="descname">choice</code><em class="property"> = ''</em><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.choice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.predict" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>please refer to util/state.py</strong> (<a class="reference internal" href="tasktk.util.html#tasktk.util.state.State" title="tasktk.util.state.State"><em>State</em></a><em>,</em>) – </td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Output:</dt>
+<dd>DA(Dialog Act), in the form of {act_type1: [[slot_name_1, value_1], [slot_name_2, value_2], …], …}</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.recommend_flag">
+<code class="descname">recommend_flag</code><em class="property"> = -1</em><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Based_Multiwoz_Bot.recommend_flag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot">
+<em class="property">class </em><code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">Rule_Inform_Bot</code><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.policy.system.policy.Sys_Policy" title="tasktk.policy.system.policy.Sys_Policy"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.policy.system.policy.Sys_Policy</span></code></a></p>
+<p>a simple, inform rule bot</p>
+<dl class="method">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot.init_session">
+<code class="descname">init_session</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot.init_session" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore after one session</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot.predict">
+<code class="descname">predict</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.Rule_Inform_Bot.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict an system action given state.
+:param state: Dialog state. Please refer to util/state.py
+:type state: dict</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">System act, with the form of (act_type, {slot_name_1: value_1, slot_name_2, value_2, …})</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">action</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.deduplicate">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">deduplicate</code><span class="sig-paren">(</span><em>lst</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.deduplicate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.fake_state">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">fake_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.fake_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.generate_car">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">generate_car</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.generate_car" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a car for taxi booking.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.generate_ref_num">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">generate_ref_num</code><span class="sig-paren">(</span><em>length</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.generate_ref_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a ref num for booking.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.test_init_state">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">test_init_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.test_init_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.policy.system.rule_based_multiwoz_bot.test_run">
+<code class="descclassname">tasktk.policy.system.rule_based_multiwoz_bot.</code><code class="descname">test_run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.policy.system.rule_based_multiwoz_bot.test_run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.policy.system">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.policy.system" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.policy.system.qlearning.html" class="btn btn-neutral float-right" title="tasktk.policy.system.qlearning package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.policy.html" class="btn btn-neutral" title="tasktk.policy package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.policy.system package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system.dialog_config">tasktk.policy.system.dialog_config module</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system.dqn_bot">tasktk.policy.system.dqn_bot module</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system.dqn_policy">tasktk.policy.system.dqn_policy module</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system.policy">tasktk.policy.system.policy module</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system.rule_based_multiwoz_bot">tasktk.policy.system.rule_based_multiwoz_bot module</a></li>
+<li><a class="reference internal" href="#module-tasktk.policy.system">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+tasktk.nlg package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.nlg.multiwoz_template_nlg
+
+Submodules
+----------
+
+tasktk.nlg.decoder module
+-------------------------
+
+.. automodule:: tasktk.nlg.decoder
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlg.lstm\_decoder\_tanh module
+-------------------------------------
+
+.. automodule:: tasktk.nlg.lstm_decoder_tanh
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlg.lstm\_nlg module
+---------------------------
+
+.. automodule:: tasktk.nlg.lstm_nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlg.nlg module
+---------------------
+
+.. automodule:: tasktk.nlg.nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlg.template\_nlg module
+-------------------------------
+
+.. automodule:: tasktk.nlg.template_nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nlg.utils module
+-----------------------
+
+.. automodule:: tasktk.nlg.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nlg
+    :members:
+    :undoc-members:
+    :show-inheritance:

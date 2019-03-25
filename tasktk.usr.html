@@ -1,0 +1,531 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.usr package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.usr.s2s_usr package" href="tasktk.usr.s2s_usr.html" />
+    <link rel="prev" title="tasktk.policy.user package" href="tasktk.policy.user.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+      <li>tasktk.usr package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.usr.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-usr-package">
+<h1>tasktk.usr package<a class="headerlink" href="#tasktk-usr-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#module-tasktk.usr.s2s_usr.lstm_encoder_decoder">tasktk.usr.s2s_usr.lstm_encoder_decoder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#module-tasktk.usr.s2s_usr.s2s_simulator">tasktk.usr.s2s_usr.s2s_simulator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#module-tasktk.usr.s2s_usr.seq_seq">tasktk.usr.s2s_usr.seq_seq module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#module-tasktk.usr.s2s_usr.utils">tasktk.usr.s2s_usr.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.s2s_usr.html#module-tasktk.usr.s2s_usr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#module-tasktk.usr.uber_usr.Config">tasktk.usr.uber_usr.Config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#module-tasktk.usr.uber_usr.data_loader">tasktk.usr.uber_usr.data_loader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#tasktk-usr-uber-usr-main-module">tasktk.usr.uber_usr.main module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#tasktk-usr-uber-usr-model-module">tasktk.usr.uber_usr.model module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasktk.usr.uber_usr.html#module-tasktk.usr.uber_usr">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.usr.goal_generator">
+<span id="tasktk-usr-goal-generator-module"></span><h2>tasktk.usr.goal_generator module<a class="headerlink" href="#module-tasktk.usr.goal_generator" title="Permalink to this headline">¶</a></h2>
+<p>Created on Feb 10th, 2019</p>
+<p>&#64;author: sungjinl</p>
+<dl class="class">
+<dt id="tasktk.usr.goal_generator.GoalGenerator">
+<em class="property">class </em><code class="descclassname">tasktk.usr.goal_generator.</code><code class="descname">GoalGenerator</code><span class="sig-paren">(</span><em>goal_model_path='/Users/pberlin/exp/DialogZone/data/multiwoz/goal/goal_model.pkl'</em>, <em>corpus_path=None</em>, <em>boldify=False</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.GoalGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>User goal generator.</p>
+<dl class="method">
+<dt id="tasktk.usr.goal_generator.GoalGenerator.build_message">
+<code class="descname">build_message</code><span class="sig-paren">(</span><em>user_goal</em>, <em>boldify=&lt;function null_boldify&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.GoalGenerator.build_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.usr.goal_generator.GoalGenerator.get_user_goal">
+<code class="descname">get_user_goal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.GoalGenerator.get_user_goal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.usr.goal_generator.do_boldify">
+<code class="descclassname">tasktk.usr.goal_generator.</code><code class="descname">do_boldify</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.do_boldify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.usr.goal_generator.multinomial">
+<code class="descclassname">tasktk.usr.goal_generator.</code><code class="descname">multinomial</code><span class="sig-paren">(</span><em>n</em>, <em>pvals</em>, <em>size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.multinomial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw samples from a multinomial distribution.</p>
+<p>The multinomial distribution is a multivariate generalisation of the
+binomial distribution.  Take an experiment with one of <code class="docutils literal notranslate"><span class="pre">p</span></code>
+possible outcomes.  An example of such an experiment is throwing a dice,
+where the outcome can be 1 through 6.  Each sample drawn from the
+distribution represents <cite>n</cite> such experiments.  Its values,
+<code class="docutils literal notranslate"><span class="pre">X_i</span> <span class="pre">=</span> <span class="pre">[X_0,</span> <span class="pre">X_1,</span> <span class="pre">...,</span> <span class="pre">X_p]</span></code>, represent the number of times the
+outcome was <code class="docutils literal notranslate"><span class="pre">i</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>int</em>) – Number of experiments.</li>
+<li><strong>pvals</strong> (<em>sequence of floats</em><em>, </em><em>length p</em>) – Probabilities of each of the <code class="docutils literal notranslate"><span class="pre">p</span></code> different outcomes.  These
+should sum to 1 (however, the last element is always assumed to
+account for the remaining probability, as long as
+<code class="docutils literal notranslate"><span class="pre">sum(pvals[:-1])</span> <span class="pre">&lt;=</span> <span class="pre">1)</span></code>.</li>
+<li><strong>size</strong> (<em>int</em><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – Output shape.  If the given shape is, e.g., <code class="docutils literal notranslate"><span class="pre">(m,</span> <span class="pre">n,</span> <span class="pre">k)</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">*</span> <span class="pre">n</span> <span class="pre">*</span> <span class="pre">k</span></code> samples are drawn.  Default is None, in which case a
+single value is returned.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p><strong>out</strong> – The drawn samples, of shape <em>size</em>, if that was provided.  If not,
+the shape is <code class="docutils literal notranslate"><span class="pre">(N,)</span></code>.</p>
+<p>In other words, each entry <code class="docutils literal notranslate"><span class="pre">out[i,j,...,:]</span></code> is an N-dimensional
+value drawn from the distribution.</p>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p>Throw a dice 20 times:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multinomial</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mf">6.</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">array([[4, 1, 7, 5, 2, 1]])</span>
+</pre></div>
+</div>
+<p>It landed 4 times on 1, once on 2, etc.</p>
+<p>Now, throw the dice 20 times, and 20 times again:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multinomial</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mf">6.</span><span class="p">]</span><span class="o">*</span><span class="mi">6</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">array([[3, 4, 3, 3, 4, 3],</span>
+<span class="go">       [2, 4, 3, 4, 0, 7]])</span>
+</pre></div>
+</div>
+<p>For the first run, we threw 3 times 1, 4 times 2, etc.  For the second,
+we threw 2 times 1, 4 times 2, etc.</p>
+<p>A loaded die is more likely to land on number 6:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multinomial</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mf">7.</span><span class="p">]</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mf">7.</span><span class="p">])</span>
+<span class="go">array([11, 16, 14, 17, 16, 26])</span>
+</pre></div>
+</div>
+<p>The probability inputs should be normalized. As an implementation
+detail, the value of the last entry is ignored and assumed to take
+up any leftover probability mass, but this should not be relied on.
+A biased coin which has twice as much weight on one side as on the
+other should be sampled like so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multinomial</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mf">1.0</span> <span class="o">/</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># RIGHT</span>
+<span class="go">array([38, 62])</span>
+</pre></div>
+</div>
+<p>not like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multinomial</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>  <span class="c1"># WRONG</span>
+<span class="go">array([100,   0])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.usr.goal_generator.nomial_sample">
+<code class="descclassname">tasktk.usr.goal_generator.</code><code class="descname">nomial_sample</code><span class="sig-paren">(</span><em>counter: collections.Counter</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.nomial_sample" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="tasktk.usr.goal_generator.null_boldify">
+<code class="descclassname">tasktk.usr.goal_generator.</code><code class="descname">null_boldify</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.usr.goal_generator.null_boldify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.usr">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.usr" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.usr.s2s_usr.html" class="btn btn-neutral float-right" title="tasktk.usr.s2s_usr package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.policy.user.html" class="btn btn-neutral" title="tasktk.policy.user package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.usr package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.usr.goal_generator">tasktk.usr.goal_generator module</a></li>
+<li><a class="reference internal" href="#module-tasktk.usr">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

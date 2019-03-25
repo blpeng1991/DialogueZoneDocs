@@ -1,0 +1,54 @@
+tasktk.nrg.mdrg package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    tasktk.nrg.mdrg.model
+    tasktk.nrg.mdrg.utils
+
+Submodules
+----------
+
+tasktk.nrg.mdrg.create\_delex\_data module
+------------------------------------------
+
+.. automodule:: tasktk.nrg.mdrg.create_delex_data
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nrg.mdrg.predict module
+------------------------------
+
+.. automodule:: tasktk.nrg.mdrg.predict
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nrg.mdrg.test module
+---------------------------
+
+.. automodule:: tasktk.nrg.mdrg.test
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tasktk.nrg.mdrg.train module
+----------------------------
+
+.. automodule:: tasktk.nrg.mdrg.train
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tasktk.nrg.mdrg
+    :members:
+    :undoc-members:
+    :show-inheritance:

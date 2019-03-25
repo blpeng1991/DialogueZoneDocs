@@ -1,0 +1,823 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.nlu.mlst package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="tasktk.nrg package" href="tasktk.nrg.html" />
+    <link rel="prev" title="tasktk.nlu package" href="tasktk.nlu.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.util.html">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+          <li><a href="tasktk.nlu.html">tasktk.nlu package</a> &gt;</li>
+        
+      <li>tasktk.nlu.mlst package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.nlu.mlst.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-nlu-mlst-package">
+<h1>tasktk.nlu.mlst package<a class="headerlink" href="#tasktk-nlu-mlst-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.binary_accuracy">
+<span id="tasktk-nlu-mlst-binary-accuracy-module"></span><h2>tasktk.nlu.mlst.binary_accuracy module<a class="headerlink" href="#module-tasktk.nlu.mlst.binary_accuracy" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.binary_accuracy.</code><code class="descname">BinaryAccuracy</code><a class="headerlink" href="#tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.training.metrics.metric.Metric</span></code></p>
+<p>This <code class="docutils literal notranslate"><span class="pre">Metric</span></code> calculates the binary accuracy.</p>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy.get_metric">
+<code class="descname">get_metric</code><span class="sig-paren">(</span><em>reset: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy.get_metric" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">The accumulated mean absolute error.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.binary_accuracy.BinaryAccuracy.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset any accumulators or internal state.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.dataset_reader">
+<span id="tasktk-nlu-mlst-dataset-reader-module"></span><h2>tasktk.nlu.mlst.dataset_reader module<a class="headerlink" href="#module-tasktk.nlu.mlst.dataset_reader" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.dataset_reader.MlstDatasetReader">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.dataset_reader.</code><code class="descname">MlstDatasetReader</code><span class="sig-paren">(</span><em>token_delimiter: str = None</em>, <em>token_indexers: Dict[str</em>, <em>allennlp.data.token_indexers.token_indexer.TokenIndexer] = None</em>, <em>lazy: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.dataset_reader.MlstDatasetReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.data.dataset_readers.dataset_reader.DatasetReader</span></code></p>
+<p>Reads instances from a pretokenised file where each line is in the following format:</p>
+<p>WORD###TAG [TAB] WORD###TAG [TAB] …..</p>
+<p>and converts it into a <code class="docutils literal notranslate"><span class="pre">Dataset</span></code> suitable for sequence tagging. You can also specify
+alternative delimiters in the constructor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>word_tag_delimiter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional (default=``”###”<a href="#id1"><span class="problematic" id="id2">``</span></a>)) – The text that separates each WORD from its TAG.</li>
+<li><strong>token_delimiter</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional (default=``None``)) – The text that separates each WORD-TAG pair from the next pair. If <code class="docutils literal notranslate"><span class="pre">None</span></code>
+then the line will just be split on whitespace.</li>
+<li><strong>token_indexers</strong> (<code class="docutils literal notranslate"><span class="pre">Dict[str,</span> <span class="pre">TokenIndexer]</span></code>, optional (default=``{“tokens”: SingleIdTokenIndexer()}``)) – We use this to define the input representation for the text.  See <code class="xref py py-class docutils literal notranslate"><span class="pre">TokenIndexer</span></code>.
+Note that the <cite>output</cite> tags will always correspond to single token IDs based on how they
+are pre-tokenised in the data file.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.dataset_reader.MlstDatasetReader.text_to_instance">
+<code class="descname">text_to_instance</code><span class="sig-paren">(</span><em>tokens: List[allennlp.data.tokenizers.token.Token], tags: List[str] = None, intents: List[str] = None</em><span class="sig-paren">)</span> &#x2192; allennlp.data.instance.Instance<a class="headerlink" href="#tasktk.nlu.mlst.dataset_reader.MlstDatasetReader.text_to_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>We take <cite>pre-tokenized</cite> input here, because we don’t have a tokenizer in this class.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.evaluate">
+<span id="tasktk-nlu-mlst-evaluate-module"></span><h2>tasktk.nlu.mlst.evaluate module<a class="headerlink" href="#module-tasktk.nlu.mlst.evaluate" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">evaluate</span></code> subcommand can be used to
+evaluate a trained model against a dataset
+and report any metrics calculated by the model.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ allennlp evaluate --help
+usage: allennlp evaluate <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>--output-file OUTPUT_FILE<span class="o">]</span>
+                         <span class="o">[</span>--weights-file WEIGHTS_FILE<span class="o">]</span>
+                         <span class="o">[</span>--cuda-device CUDA_DEVICE<span class="o">]</span> <span class="o">[</span>-o OVERRIDES<span class="o">]</span>
+                         <span class="o">[</span>--batch-weight-key BATCH_WEIGHT_KEY<span class="o">]</span>
+                         <span class="o">[</span>--extend-vocab<span class="o">]</span>
+                         <span class="o">[</span>--embedding-sources-mapping EMBEDDING_SOURCES_MAPPING<span class="o">]</span>
+                         <span class="o">[</span>--include-package INCLUDE_PACKAGE<span class="o">]</span>
+                         archive_file input_file
+
+Evaluate the specified model + dataset
+
+positional arguments:
+archive_file            path to an archived trained model
+input_file              path to the file containing the evaluation data
+
+optional arguments:
+-h, --help              show this <span class="nb">help</span> message and <span class="nb">exit</span>
+--output-file OUTPUT_FILE
+                        path to output file to save metrics
+--weights-file WEIGHTS_FILE
+                        a path that overrides which weights file to use
+--cuda-device CUDA_DEVICE
+                        id of GPU to use <span class="o">(</span><span class="k">if</span> any<span class="o">)</span>
+-o OVERRIDES, --overrides OVERRIDES
+                        a JSON structure used to override the experiment
+                        configuration
+--batch-weight-key BATCH_WEIGHT_KEY
+                        If non-empty, name of metric used to weight the loss
+                        on a per-batch basis.
+--extend-vocab          <span class="k">if</span> specified, we will use the instances in your new
+                        dataset to extend your vocabulary. If pretrained-file
+                        was used to initialize embedding layers, you may also
+                        need to pass --embedding-sources-mapping.
+--embedding-sources-mapping EMBEDDING_SOURCES_MAPPING
+                        a JSON dict defining mapping from embedding module
+                        path to embeddingpretrained-file used during training.
+                        If not passed, and embedding needs to be extended, we
+                        will try to use the original file paths used during
+                        training. If they are not available we will use random
+                        vectors <span class="k">for</span> embedding extension.
+--include-package INCLUDE_PACKAGE
+                        additional packages to include
+</pre></div>
+</div>
+<dl class="function">
+<dt id="tasktk.nlu.mlst.evaluate.evaluate_from_args">
+<code class="descclassname">tasktk.nlu.mlst.evaluate.</code><code class="descname">evaluate_from_args</code><span class="sig-paren">(</span><em>args: argparse.Namespace</em><span class="sig-paren">)</span> &#x2192; Dict[str, Any]<a class="headerlink" href="#tasktk.nlu.mlst.evaluate.evaluate_from_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.focal_loss">
+<span id="tasktk-nlu-mlst-focal-loss-module"></span><h2>tasktk.nlu.mlst.focal_loss module<a class="headerlink" href="#module-tasktk.nlu.mlst.focal_loss" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.focal_loss.FocalBCEWithLogitsLoss">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.focal_loss.</code><code class="descname">FocalBCEWithLogitsLoss</code><span class="sig-paren">(</span><em>gamma=0</em>, <em>size_average=True</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.focal_loss.FocalBCEWithLogitsLoss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.focal_loss.FocalBCEWithLogitsLoss.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>input</em>, <em>target</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.focal_loss.FocalBCEWithLogitsLoss.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.model">
+<span id="tasktk-nlu-mlst-model-module"></span><h2>tasktk.nlu.mlst.model module<a class="headerlink" href="#module-tasktk.nlu.mlst.model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.model.MlstNlu">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.model.</code><code class="descname">MlstNlu</code><span class="sig-paren">(</span><em>vocab: allennlp.data.vocabulary.Vocabulary</em>, <em>text_field_embedder: allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder</em>, <em>encoder: allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder</em>, <em>sequence_label_namespace: str = 'labels'</em>, <em>intent_label_namespace: str = 'intent_labels'</em>, <em>feedforward: Optional[allennlp.modules.feedforward.FeedForward] = None</em>, <em>label_encoding: Optional[str] = None</em>, <em>include_start_end_transitions: bool = True</em>, <em>crf_decoding: bool = False</em>, <em>constrain_crf_decoding: bool = None</em>, <em>focal_loss_gamma: float = None</em>, <em>calculate_span_f1: bool = None</em>, <em>dropout: Optional[float] = None</em>, <em>verbose_metrics: bool = False</em>, <em>initializer: allennlp.nn.initializers.InitializerApplicator = &lt;allennlp.nn.initializers.InitializerApplicator object&gt;</em>, <em>regularizer: Optional[allennlp.nn.regularizers.regularizer_applicator.RegularizerApplicator] = None</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.model.MlstNlu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.models.model.Model</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">MlstNlu</span></code> encodes a sequence of text with a <code class="docutils literal notranslate"><span class="pre">Seq2SeqEncoder</span></code>,
+then uses a Conditional Random Field model to predict a tag for each token in the sequence.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vocab</strong> (<code class="docutils literal notranslate"><span class="pre">Vocabulary</span></code>, required) – A Vocabulary, required in order to compute sizes for input/output projections.</li>
+<li><strong>text_field_embedder</strong> (<code class="docutils literal notranslate"><span class="pre">TextFieldEmbedder</span></code>, required) – Used to embed the tokens <code class="docutils literal notranslate"><span class="pre">TextField</span></code> we get as input to the model.</li>
+<li><strong>encoder</strong> (<code class="docutils literal notranslate"><span class="pre">Seq2SeqEncoder</span></code>) – The encoder that we will use in between embedding tokens and predicting output tags.</li>
+<li><strong>sequence_label_namespace</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional (default=``labels``)) – This is needed to compute the SpanBasedF1Measure metric.
+Unless you did something unusual, the default value should be what you want.</li>
+<li><strong>feedforward</strong> (<code class="docutils literal notranslate"><span class="pre">FeedForward</span></code>, optional, (default = None).) – An optional feedforward layer to apply after the encoder.</li>
+<li><strong>label_encoding</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, optional (default=``None``)) – Label encoding to use when calculating span f1 and constraining
+the CRF at decoding time . Valid options are “BIO”, “BIOUL”, “IOB1”, “BMES”.
+Required if <code class="docutils literal notranslate"><span class="pre">calculate_span_f1</span></code> or <code class="docutils literal notranslate"><span class="pre">constrain_crf_decoding</span></code> is true.</li>
+<li><strong>include_start_end_transitions</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=``True``)) – Whether to include start and end transition parameters in the CRF.</li>
+<li><strong>constrain_crf_decoding</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=``None``)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the CRF is constrained at decoding time to
+produce valid sequences of tags. If this is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">label_encoding</span></code> is required. If <code class="docutils literal notranslate"><span class="pre">None</span></code> and
+label_encoding is specified, this is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">None</span></code> and label_encoding is not specified, it defaults
+to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li><strong>calculate_span_f1</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=``None``)) – Calculate span-level F1 metrics during training. If this is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">label_encoding</span></code> is required. If <code class="docutils literal notranslate"><span class="pre">None</span></code> and
+label_encoding is specified, this is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>.
+If <code class="docutils literal notranslate"><span class="pre">None</span></code> and label_encoding is not specified, it defaults
+to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li><strong>dropout</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code>, optional (default=``None``)) – </li>
+<li><strong>verbose_metrics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default = False)) – If true, metrics will be returned per label class in addition
+to the overall statistics.</li>
+<li><strong>initializer</strong> (<code class="docutils literal notranslate"><span class="pre">InitializerApplicator</span></code>, optional (default=``InitializerApplicator()``)) – Used to initialize the model parameters.</li>
+<li><strong>regularizer</strong> (<code class="docutils literal notranslate"><span class="pre">RegularizerApplicator</span></code>, optional (default=``None``)) – If provided, will be used to calculate the regularization penalty during training.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.model.MlstNlu.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>output_dict: Dict[str, torch.Tensor]</em><span class="sig-paren">)</span> &#x2192; Dict[str, torch.Tensor]<a class="headerlink" href="#tasktk.nlu.mlst.model.MlstNlu.decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the tag ids to the actual tags.
+<code class="docutils literal notranslate"><span class="pre">output_dict[&quot;tags&quot;]</span></code> is a list of lists of tag_ids,
+so we use an ugly nested list comprehension.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlu.mlst.model.MlstNlu.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>tokens: Dict[str, torch.LongTensor], tags: torch.LongTensor = None, intents: torch.LongTensor = None, metadata: List[Dict[str, Any]] = None, **kwargs</em><span class="sig-paren">)</span> &#x2192; Dict[str, torch.Tensor]<a class="headerlink" href="#tasktk.nlu.mlst.model.MlstNlu.forward" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tokens</strong> (<code class="docutils literal notranslate"><span class="pre">Dict[str,</span> <span class="pre">torch.LongTensor]</span></code>, required) – The output of <code class="docutils literal notranslate"><span class="pre">TextField.as_array()</span></code>, which should typically be passed directly to a
+<code class="docutils literal notranslate"><span class="pre">TextFieldEmbedder</span></code>. This output is a dictionary mapping keys to <code class="docutils literal notranslate"><span class="pre">TokenIndexer</span></code>
+tensors.  At its most basic, using a <code class="docutils literal notranslate"><span class="pre">SingleIdTokenIndexer</span></code> this is: <code class="docutils literal notranslate"><span class="pre">{&quot;tokens&quot;:</span>
+<span class="pre">Tensor(batch_size,</span> <span class="pre">num_tokens)}</span></code>. This dictionary will have the same keys as were used
+for the <code class="docutils literal notranslate"><span class="pre">TokenIndexers</span></code> when you created the <code class="docutils literal notranslate"><span class="pre">TextField</span></code> representing your
+sequence.  The dictionary is designed to be passed directly to a <code class="docutils literal notranslate"><span class="pre">TextFieldEmbedder</span></code>,
+which knows how to combine different word representations into a single vector per
+token in your input.</li>
+<li><strong>tags</strong> (<code class="docutils literal notranslate"><span class="pre">torch.LongTensor</span></code>, optional (default = <code class="docutils literal notranslate"><span class="pre">None</span></code>)) – A torch tensor representing the sequence of integer gold class labels of shape
+<code class="docutils literal notranslate"><span class="pre">(batch_size,</span> <span class="pre">num_tokens)</span></code>.</li>
+<li><strong>metadata</strong> (<code class="docutils literal notranslate"><span class="pre">List[Dict[str,</span> <span class="pre">Any]]</span></code>, optional, (default = None)) – metadata containg the original words in the sentence to be tagged under a ‘words’ key.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>An output dictionary consisting of</em></li>
+<li><strong>logits</strong> (<code class="docutils literal notranslate"><span class="pre">torch.FloatTensor</span></code>) – The logits that are the output of the <code class="docutils literal notranslate"><span class="pre">tag_projection_layer</span></code></li>
+<li><strong>mask</strong> (<code class="docutils literal notranslate"><span class="pre">torch.LongTensor</span></code>) – The text field mask for the input tokens</li>
+<li><strong>tags</strong> (<code class="docutils literal notranslate"><span class="pre">List[List[int]]</span></code>) – The predicted tags using the Viterbi algorithm.</li>
+<li><strong>loss</strong> (<code class="docutils literal notranslate"><span class="pre">torch.FloatTensor</span></code>, optional) – A scalar loss to be optimised. Only computed if gold label <code class="docutils literal notranslate"><span class="pre">tags</span></code> are provided.</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlu.mlst.model.MlstNlu.get_metrics">
+<code class="descname">get_metrics</code><span class="sig-paren">(</span><em>reset: bool = False</em><span class="sig-paren">)</span> &#x2192; Dict[str, float]<a class="headerlink" href="#tasktk.nlu.mlst.model.MlstNlu.get_metrics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of metrics. This method will be called by
+<code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.training.Trainer</span></code> in order to compute and use model metrics for early
+stopping and model serialization.  We return an empty dictionary here rather than raising
+as it is not required to implement metrics for a new model.  A boolean <cite>reset</cite> parameter is
+passed, as frequently a metric accumulator will have some state which should be reset
+between epochs. This is also compatible with <code class="xref py py-class docutils literal notranslate"> <span class="pre">Metrics</span>
+<span class="pre">should</span> <span class="pre">be</span> <span class="pre">populated</span> <span class="pre">during</span> <span class="pre">the</span> <span class="pre">call</span> <span class="pre">to</span> <span class="pre">``forward`</span></code>, with the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Metric</span></code> handling the accumulation of the metric until this
+method is called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlu.mlst.model.MlstNlu.get_predicted_tags">
+<code class="descname">get_predicted_tags</code><span class="sig-paren">(</span><em>sequence_logits: torch.Tensor</em><span class="sig-paren">)</span> &#x2192; torch.Tensor<a class="headerlink" href="#tasktk.nlu.mlst.model.MlstNlu.get_predicted_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does a simple position-wise argmax over each token, converts indices to string labels, and
+adds a <code class="docutils literal notranslate"><span class="pre">&quot;tags&quot;</span></code> key to the dictionary with the result.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.multilabel_f1_measure">
+<span id="tasktk-nlu-mlst-multilabel-f1-measure-module"></span><h2>tasktk.nlu.mlst.multilabel_f1_measure module<a class="headerlink" href="#module-tasktk.nlu.mlst.multilabel_f1_measure" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.multilabel_f1_measure.</code><code class="descname">MultiLabelF1Measure</code><span class="sig-paren">(</span><em>vocabulary: allennlp.data.vocabulary.Vocabulary</em>, <em>namespace: str = 'intent_labels'</em>, <em>ignore_classes: List[str] = None</em>, <em>coarse: bool = True</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">allennlp.training.metrics.metric.Metric</span></code></p>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure.get_metric">
+<code class="descname">get_metric</code><span class="sig-paren">(</span><em>reset: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure.get_metric" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><ul class="simple">
+<li><em>A Dict per label containing following the span based metrics</em></li>
+<li><strong>precision</strong> (<em>float</em>)</li>
+<li><strong>recall</strong> (<em>float</em>)</li>
+<li><strong>f1-measure</strong> (<em>float</em>)</li>
+<li>Additionally, an <code class="docutils literal notranslate"><span class="pre">overall</span></code> key is included, which provides the precision,</li>
+<li><em>recall and f1-measure for all spans.</em></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.multilabel_f1_measure.MultiLabelF1Measure.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset any accumulators or internal state.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.nlu">
+<span id="tasktk-nlu-mlst-nlu-module"></span><h2>tasktk.nlu.mlst.nlu module<a class="headerlink" href="#module-tasktk.nlu.mlst.nlu" title="Permalink to this headline">¶</a></h2>
+<p>Created on March 12th, 2019</p>
+<p>&#64;author: sungjinl</p>
+<dl class="class">
+<dt id="tasktk.nlu.mlst.nlu.MlstNLU">
+<em class="property">class </em><code class="descclassname">tasktk.nlu.mlst.nlu.</code><code class="descname">MlstNLU</code><span class="sig-paren">(</span><em>archive_file='/Users/pberlin/exp/DialogZone/tasktk/nlu/mlst/models/glove_nff/model.tar.gz'</em>, <em>cuda_device=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.nlu.MlstNLU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Multilabel sequence tagging model.</p>
+<dl class="method">
+<dt id="tasktk.nlu.mlst.nlu.MlstNLU.parse">
+<code class="descname">parse</code><span class="sig-paren">(</span><em>utterance</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.nlu.MlstNLU.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict the dialog act of a natural language utterance and apply error model.
+:param utterance: A natural language utterance.
+:type utterance: str</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The dialog act of utterance.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">output (dict)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst.train">
+<span id="tasktk-nlu-mlst-train-module"></span><h2>tasktk.nlu.mlst.train module<a class="headerlink" href="#module-tasktk.nlu.mlst.train" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">train</span></code> subcommand can be used to train a model.
+It requires a configuration file and a directory in
+which to write the results.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ allennlp train --help
+
+usage: allennlp train <span class="o">[</span>-h<span class="o">]</span> -s SERIALIZATION_DIR <span class="o">[</span>-r<span class="o">]</span> <span class="o">[</span>-f<span class="o">]</span> <span class="o">[</span>-o OVERRIDES<span class="o">]</span>
+                      <span class="o">[</span>--file-friendly-logging<span class="o">]</span>
+                      <span class="o">[</span>--include-package INCLUDE_PACKAGE<span class="o">]</span>
+                      param_path
+
+Train the specified model on the specified dataset.
+
+positional arguments:
+  param_path            path to parameter file describing the model to be
+                        trained
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -s SERIALIZATION_DIR, --serialization-dir SERIALIZATION_DIR
+                        directory in which to save the model and its logs
+  -r, --recover         recover training from the state in serialization_dir
+  -f, --force           overwrite the output directory <span class="k">if</span> it exists
+  -o OVERRIDES, --overrides OVERRIDES
+                        a JSON structure used to override the experiment
+                        configuration
+  --file-friendly-logging
+                        outputs tqdm status on separate lines and slows tqdm
+                        refresh rate
+  --include-package INCLUDE_PACKAGE
+                         additional packages to include
+</pre></div>
+</div>
+<dl class="function">
+<dt id="tasktk.nlu.mlst.train.train_model">
+<code class="descclassname">tasktk.nlu.mlst.train.</code><code class="descname">train_model</code><span class="sig-paren">(</span><em>params: allennlp.common.params.Params</em>, <em>serialization_dir: str</em>, <em>file_friendly_logging: bool = False</em>, <em>recover: bool = False</em>, <em>force: bool = False</em><span class="sig-paren">)</span> &#x2192; allennlp.models.model.Model<a class="headerlink" href="#tasktk.nlu.mlst.train.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trains the model specified in the given <code class="xref py py-class docutils literal notranslate"><span class="pre">Params</span></code> object, using the data and training
+parameters also specified in that object, and saves the results in <code class="docutils literal notranslate"><span class="pre">serialization_dir</span></code>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>params</strong> (<code class="docutils literal notranslate"><span class="pre">Params</span></code>) – A parameter object specifying an AllenNLP Experiment.</li>
+<li><strong>serialization_dir</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The directory in which to save results and logs.</li>
+<li><strong>file_friendly_logging</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we add newlines to tqdm output, even on an interactive terminal, and we slow
+down tqdm’s output to only once every 10 seconds.</li>
+<li><strong>recover</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will try to recover a training run from an existing serialization
+directory.  This is only intended for use when something actually crashed during the middle
+of a run.  For continuing training a model on new data, see the <code class="docutils literal notranslate"><span class="pre">fine-tune</span></code> command.</li>
+<li><strong>force</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will overwrite the serialization directory if it already exists.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>best_model</strong> – The model with the best epoch weights.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="docutils literal notranslate"><span class="pre">Model</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlu.mlst.train.train_model_from_args">
+<code class="descclassname">tasktk.nlu.mlst.train.</code><code class="descname">train_model_from_args</code><span class="sig-paren">(</span><em>args: argparse.Namespace</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.nlu.mlst.train.train_model_from_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just converts from an <code class="docutils literal notranslate"><span class="pre">argparse.Namespace</span></code> object to string paths.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="tasktk.nlu.mlst.train.train_model_from_file">
+<code class="descclassname">tasktk.nlu.mlst.train.</code><code class="descname">train_model_from_file</code><span class="sig-paren">(</span><em>parameter_filename: str</em>, <em>serialization_dir: str</em>, <em>overrides: str = ''</em>, <em>file_friendly_logging: bool = False</em>, <em>recover: bool = False</em>, <em>force: bool = False</em><span class="sig-paren">)</span> &#x2192; allennlp.models.model.Model<a class="headerlink" href="#tasktk.nlu.mlst.train.train_model_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper around <a class="reference internal" href="#tasktk.nlu.mlst.train.train_model" title="tasktk.nlu.mlst.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a> which loads the params from a file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>parameter_filename</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A json parameter file specifying an AllenNLP experiment.</li>
+<li><strong>serialization_dir</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The directory in which to save results and logs. We just pass this along to
+<a class="reference internal" href="#tasktk.nlu.mlst.train.train_model" title="tasktk.nlu.mlst.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a>.</li>
+<li><strong>overrides</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – A JSON string that we will use to override values in the input parameter file.</li>
+<li><strong>file_friendly_logging</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we make our output more friendly to saved model files.  We just pass this
+along to <a class="reference internal" href="#tasktk.nlu.mlst.train.train_model" title="tasktk.nlu.mlst.train.train_model"><code class="xref py py-func docutils literal notranslate"><span class="pre">train_model()</span></code></a>.</li>
+<li><strong>recover</strong> (<a href="#id3"><span class="problematic" id="id4">``</span></a>bool`, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will try to recover a training run from an existing serialization
+directory.  This is only intended for use when something actually crashed during the middle
+of a run.  For continuing training a model on new data, see the <code class="docutils literal notranslate"><span class="pre">fine-tune</span></code> command.</li>
+<li><strong>force</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, optional (default=False)) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, we will overwrite the serialization directory if it already exists.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.nlu.mlst">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.nlu.mlst" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tasktk.nrg.html" class="btn btn-neutral float-right" title="tasktk.nrg package" accesskey="n" rel="next">Next <img src="_static/images/chevron-right-orange.svg" class="next-page"></a>
+      
+      
+        <a href="tasktk.nlu.html" class="btn btn-neutral" title="tasktk.nlu package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.nlu.mlst package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.binary_accuracy">tasktk.nlu.mlst.binary_accuracy module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.dataset_reader">tasktk.nlu.mlst.dataset_reader module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.evaluate">tasktk.nlu.mlst.evaluate module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.focal_loss">tasktk.nlu.mlst.focal_loss module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.model">tasktk.nlu.mlst.model module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.multilabel_f1_measure">tasktk.nlu.mlst.multilabel_f1_measure module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.nlu">tasktk.nlu.mlst.nlu module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst.train">tasktk.nlu.mlst.train module</a></li>
+<li><a class="reference internal" href="#module-tasktk.nlu.mlst">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>

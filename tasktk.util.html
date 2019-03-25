@@ -1,0 +1,534 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>tasktk.util package &mdash; dialoge zone  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> -->
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="tasktk.usr.uber_usr package" href="tasktk.usr.uber_usr.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+</head>
+
+<div class="container-fluid header-holder tutorials-header" id="header-holder">
+  <div class="container">
+    <div class="header-container">
+
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="https://blpeng1991.github.io/DialogueZone/">Get Started</a>
+          </li>
+
+          <!-- <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/features">Features</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/ecosystem">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+
+          <li>
+            <a href="maito:">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
+    </div>
+
+  </div>
+</div>
+
+
+<body class="pytorch-body">
+
+   
+
+    
+
+    <div class="table-of-contents-link-wrapper">
+      <span>Table of Contents</span>
+      <a href="#" class="toggle-table-of-contents" data-behavior="toggle-table-of-contents"></a>
+    </div>
+
+    <nav data-toggle="wy-nav-shift" class="pytorch-left-menu" id="pytorch-left-menu">
+      <div class="pytorch-side-scroll">
+        <div class="pytorch-menu pytorch-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <div class="pytorch-left-menu-search">
+            
+
+            
+              
+              
+            
+
+            
+
+
+  
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search Docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+            
+          </div>
+
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/seq2seq_tutorial.html">Creating an Agent</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="tasktk.html">tasktk package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dialog_agent.html">tasktk.dialog_agent package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.dst.html">tasktk.dst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.html">tasktk.nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlg.multiwoz_template_nlg.html">tasktk.nlg.multiwoz_template_nlg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.html">tasktk.nlu package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nlu.mlst.html">tasktk.nlu.mlst package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.html">tasktk.nrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.html">tasktk.nrg.mdrg package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.model.html">tasktk.nrg.mdrg.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.nrg.mdrg.utils.html">tasktk.nrg.mdrg.utils package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.html">tasktk.policy package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.html">tasktk.policy.system package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.system.qlearning.html">tasktk.policy.system.qlearning package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.policy.user.html">tasktk.policy.user package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.html">tasktk.usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.s2s_usr.html">tasktk.usr.s2s_usr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasktk.usr.uber_usr.html">tasktk.usr.uber_usr package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">tasktk.util package</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="pytorch-container">
+      <div class="pytorch-page-level-bar" id="pytorch-page-level-bar">
+        <div class="pytorch-breadcrumbs-wrapper">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="pytorch-breadcrumbs">
+    
+      <li>
+        <a href="index.html">
+          
+            Docs
+          
+        </a> &gt;
+      </li>
+
+        
+          <li><a href="tasktk.html">tasktk package</a> &gt;</li>
+        
+      <li>tasktk.util package</li>
+    
+    
+      <li class="pytorch-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tasktk.util.rst.txt" rel="nofollow"><img src="_static/images/view-page-source-icon.svg"></a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+        </div>
+
+        <div class="pytorch-shortcuts-wrapper" id="pytorch-shortcuts-wrapper">
+          Shortcuts
+        </div>
+      </div>
+
+      <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
+        <div class="pytorch-content-left">
+          
+          <div class="rst-content">
+          
+            <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
+             <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+              
+  <div class="section" id="tasktk-util-package">
+<h1>tasktk.util package<a class="headerlink" href="#tasktk-util-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.util.dataloader">
+<span id="tasktk-util-dataloader-module"></span><h2>tasktk.util.dataloader module<a class="headerlink" href="#module-tasktk.util.dataloader" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>Data loader for task-oriented dialog framework.</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="function">
+<dt id="tasktk.util.dataloader.load">
+<code class="descclassname">tasktk.util.dataloader.</code><code class="descname">load</code><span class="sig-paren">(</span><em>domain_name</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.dataloader.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.util.dbquery">
+<span id="tasktk-util-dbquery-module"></span><h2>tasktk.util.dbquery module<a class="headerlink" href="#module-tasktk.util.dbquery" title="Permalink to this headline">¶</a></h2>
+<p>Created on Feb 10th, 2019</p>
+<p>&#64;author: sungjinl</p>
+<dl class="function">
+<dt id="tasktk.util.dbquery.query">
+<code class="descclassname">tasktk.util.dbquery.</code><code class="descname">query</code><span class="sig-paren">(</span><em>domain</em>, <em>constraints</em>, <em>ignore_open=True</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.dbquery.query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of entities for a given domain
+based on the annotation of the belief state</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.util.dialog_act">
+<span id="tasktk-util-dialog-act-module"></span><h2>tasktk.util.dialog_act module<a class="headerlink" href="#module-tasktk.util.dialog_act" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.util.dialog_act.Deterministic_Act">
+<em class="property">class </em><code class="descclassname">tasktk.util.dialog_act.</code><code class="descname">Deterministic_Act</code><span class="sig-paren">(</span><em>act_type</em>, <em>sv_pairs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.dialog_act.Deterministic_Act" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.util.dialog_act.Dialog_Act" title="tasktk.util.dialog_act.Dialog_Act"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.util.dialog_act.Dialog_Act</span></code></a></p>
+<p>Deterministic dialog act class.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="tasktk.util.dialog_act.Dialog_Act">
+<em class="property">class </em><code class="descclassname">tasktk.util.dialog_act.</code><code class="descname">Dialog_Act</code><a class="headerlink" href="#tasktk.util.dialog_act.Dialog_Act" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The base class for all kinds of dialog act.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="tasktk.util.dialog_act.Stochastic_Act">
+<em class="property">class </em><code class="descclassname">tasktk.util.dialog_act.</code><code class="descname">Stochastic_Act</code><span class="sig-paren">(</span><em>act_type_vec</em>, <em>sv_pair_vecs</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.dialog_act.Stochastic_Act" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#tasktk.util.dialog_act.Dialog_Act" title="tasktk.util.dialog_act.Dialog_Act"><code class="xref py py-class docutils literal notranslate"><span class="pre">tasktk.util.dialog_act.Dialog_Act</span></code></a></p>
+<p>Stochastic dialog act class.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.util.kb_query">
+<span id="tasktk-util-kb-query-module"></span><h2>tasktk.util.kb_query module<a class="headerlink" href="#module-tasktk.util.kb_query" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu, yqzhangthu</p>
+<dl class="class">
+<dt id="tasktk.util.kb_query.KB_Query">
+<em class="property">class </em><code class="descclassname">tasktk.util.kb_query.</code><code class="descname">KB_Query</code><span class="sig-paren">(</span><em>kb_path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.kb_query.KB_Query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="tasktk.util.kb_query.KB_Query.query">
+<code class="descname">query</code><span class="sig-paren">(</span><em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.kb_query.KB_Query.query" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>state</strong> (<em>dict</em>) – The current state, every item is updated except ‘kb_result_dict’.
+state[‘current_slots’][‘inform_slots’] provides the constraints collected so far.
+Example: {‘price’: ‘expensive’, ‘location’: ‘north’}</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="docutils">
+<dt>A list of query results, each item is a instance dict.</dt>
+<dd><dl class="first last docutils">
+<dt>Example: [{‘name’: ‘xxx hotel’, ‘price’: expensive’, ‘location’: ‘north’, …},</dt>
+<dd>{‘name’: ‘xxxx hotel’, …}]</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">query_result (list)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.util.log">
+<span id="tasktk-util-log-module"></span><h2>tasktk.util.log module<a class="headerlink" href="#module-tasktk.util.log" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tasktk.util.log.Log">
+<em class="property">class </em><code class="descclassname">tasktk.util.log.</code><code class="descname">Log</code><span class="sig-paren">(</span><em>log_path</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.log.Log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="tasktk.util.log.Log.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.log.Log.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="tasktk.util.log.Log.log">
+<code class="descname">log</code><span class="sig-paren">(</span><em>info</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.log.Log.log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tasktk.util.state">
+<span id="tasktk-util-state-module"></span><h2>tasktk.util.state module<a class="headerlink" href="#module-tasktk.util.state" title="Permalink to this headline">¶</a></h2>
+<p>Created on Jan 1st, 2019</p>
+<p>&#64;author: zhangzthu</p>
+<dl class="class">
+<dt id="tasktk.util.state.State">
+<em class="property">class </em><code class="descclassname">tasktk.util.state.</code><code class="descname">State</code><a class="headerlink" href="#tasktk.util.state.State" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for dialog state.</p>
+<dl class="method">
+<dt id="tasktk.util.state.State.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>new_state</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.state.State.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the state with the new_state variable.
+:param new_state: A new state variable.
+:type new_state: dict</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tasktk.util.state.State.set_aspect">
+<code class="descname">set_aspect</code><span class="sig-paren">(</span><em>slot</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#tasktk.util.state.State.set_aspect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value for certrain slot.
+:param slot: The name of slot.
+:type slot: str
+:param value: The value of the slot.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="tasktk-util-value-gen-module">
+<h2>tasktk.util.value_gen module<a class="headerlink" href="#tasktk-util-value-gen-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-tasktk.util">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tasktk.util" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+             </article>
+             
+            </div>
+            <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="tasktk.usr.uber_usr.html" class="btn btn-neutral" title="tasktk.usr.uber_usr package" accesskey="p" rel="prev"><img src="_static/images/chevron-right-orange.svg" class="previous-page"> Previous</a>
+      
+    </div>
+  
+
+  
+
+    <hr>
+
+  
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Microsoft.
+
+    </p>
+  </div>
+    
+      <div>
+        Built with <a href="http://sphinx-doc.org/">Pytorch Sphinx</a> using a <a href="https://github.com/pytorch/pytorch_sphinx_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs and Facebook</a>.
+      </div>
+     
+
+</footer>
+
+          </div>
+        </div>
+
+        <div class="pytorch-content-right" id="pytorch-content-right">
+          <div class="pytorch-right-menu" id="pytorch-right-menu">
+            <div class="pytorch-side-scroll" id="pytorch-side-scroll-right">
+              <ul>
+<li><a class="reference internal" href="#">tasktk.util package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.dataloader">tasktk.util.dataloader module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.dbquery">tasktk.util.dbquery module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.dialog_act">tasktk.util.dialog_act module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.kb_query">tasktk.util.kb_query module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.log">tasktk.util.log module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util.state">tasktk.util.state module</a></li>
+<li><a class="reference internal" href="#tasktk-util-value-gen-module">tasktk.util.value_gen module</a></li>
+<li><a class="reference internal" href="#module-tasktk.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+
+  
+
+     
+       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+         <script type="text/javascript" src="_static/jquery.js"></script>
+         <script type="text/javascript" src="_static/underscore.js"></script>
+         <script type="text/javascript" src="_static/doctools.js"></script>
+         <script type="text/javascript" src="_static/language_data.js"></script>
+     
+
+  
+
+  <script type="text/javascript" src="_static/js/vendor/popper.min.js"></script>
+  <script type="text/javascript" src="_static/js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+  
+  <!-- Begin Mobile Menu -->
+
+  <div class="mobile-main-menu">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="mobile-main-menu-header-container">
+          <a class="main-menu-close-button" href="#" data-behavior="close-mobile-menu"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-main-menu-links-container">
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#">Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">Features</a>
+          </li>
+
+          <li>
+            <a href="#">Ecosystem</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/blog/">Blog</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/tutorials">Tutorials</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/index.html">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://blpeng1991.github.com/DialogueZoneDocs/resources">Resources</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xiul-msr/DialogueZone">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Mobile Menu -->
+
+  <script type="text/javascript" src="_static/js/vendor/anchor.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      mobileMenu.bind();
+      mobileTOC.bind();
+      pytorchAnchors.bind();
+      sideMenus.bind();
+      scrollToAnchor.bind();
+      highlightNavigation.bind();
+
+      // Add class to links that have code blocks, since we cannot create links in code blocks
+      $("article.pytorch-article a span.pre").each(function(e) {
+        $(this).closest("a").addClass("has-code");
+      });
+    })
+  </script>
+</body>
+</html>
